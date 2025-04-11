@@ -1,0 +1,66 @@
+{
+  "lots": [
+    {
+      "id": "DT-001",
+      "name": "Downtown Main Parking",
+      "location": {
+        "lat": 40.712776,
+        "lng": -74.005974
+      },
+      "capacity": 200,
+      "available": 45,
+      "hourlyRate": 3.50,
+      "status": "open",
+      "features": [
+        "cctv",
+        "ev-charging",
+        "security"
+      ],
+      "operatingHours": {
+        "weekdays": "06:00-22:00",
+        "weekends": "08:00-20:00"
+      }
+    },
+    {
+      "id": "MALL-002",
+      "name": "City Center Mall Parking",
+      "location": {
+        "lat": 40.758896,
+        "lng": -73.985130
+      },
+      "capacity": 500,
+      "available": 127,
+      "hourlyRate": 4.00,
+      "status": "open",
+      "features": [
+        "valet",
+        "car-wash",
+        "disabled-access"
+      ],
+      "operatingHours": {
+        "daily": "07:00-23:00"
+      }
+    },
+    {
+      "id": "AIR-003",
+      "name": "International Airport Parking",
+      "location": {
+        "lat": 40.641766,
+        "lng": -73.780968
+      },
+      "capacity": 1000,
+      "available": 234,
+      "hourlyRate": 6.00,
+      "status": "open",
+      "features": [
+        "long-term",
+        "shuttle-service",
+        "24/7-security"
+      ],
+      "operatingHours": {
+        "24/7": true
+      }
+    }
+  ],
+  "lastUpdated": "2024-05-20T14:30:00Z"
+}

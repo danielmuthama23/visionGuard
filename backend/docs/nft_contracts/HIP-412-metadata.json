@@ -1,0 +1,38 @@
+// docs/nft_contracts/HIP-412-metadata.json
+{
+  "name": "VisionGuard Parking Token",
+  "symbol": "VGPT",
+  "type": "HIP412@2.0.0",
+  "description": "NFT representing parking session",
+  "image": "ipfs://QmXc7ETdW7jXJqJ9XZ8T7D6E9XZ8T7D6E9XZ8T7D6E9XZ8T7D6/nft.png",
+  "properties": {
+    "vehicle": {
+      "licensePlate": {
+        "type": "string",
+        "description": "Vehicle registration plate"
+      },
+      "color": {
+        "type": "string",
+        "description": "Vehicle color classification"
+      },
+      "vehicleType": {
+        "type": "string",
+        "enum": ["sedan", "suv", "truck", "motorcycle"]
+      }
+    },
+    "parking": {
+      "lotId": {
+        "type": "string",
+        "description": "Parking zone identifier"
+      },
+      "entryTime": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "exitTime": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+# infrastructure/docker-compose.yml
+version: '3.8'
+
+services:
+  ai-processor:
+    build: ./ai_processing
+    environment:
+      - AZURE_VISION_ENDPOINT=${AZURE_VISION_ENDPOINT}
+      - COSMOS_DB_CONN_STR=${COSMOS_DB_CONN_STR}
+    ports:
+      - "5000:5000"
+    networks:
+      - visionguard-net
+
+  blockchain-node:
+    build: ./blockchain
+    environment:
+      - HEDERA_NETWORK=testnet
+      - HEDERA_ACCOUNT_ID=${HEDERA_ACCOUNT_ID}
+    networks:
+      - visionguard-net
+
+  iot-controller:
+    build: ./iot_control
+    environment:
+      - MQTT_BROKER=mosquitto
+    depends_on:
+      - mosquitto
+    networks:
+      - visionguard-net
+
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+    networks:
+      - visionguard-net
+
+networks:
+  visionguard-net:

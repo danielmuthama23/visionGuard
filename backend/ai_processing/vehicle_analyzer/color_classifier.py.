@@ -1,0 +1,31 @@
+# ai_processing/vehicle_analyzer/color_classifier.py
+import onnxruntime as ort
+import numpy as np
+from PIL import Image
+
+class ColorClassifier:
+    def __init__(self, model_path="models/vehicle_color.onnx"):
+        self.session = ort.InferenceSession(model_path)
+        self.input_name = self.session.get_inputs()[0].name
+        self.colors = [
+            'white', 'black', 'gray', 'silver', 
+            'red', 'blue', 'green', 'yellow'
+        ]
+
+    def preprocess(self, image):
+        """Prepare image for color classification"""
+        img = image.resize((224, 224))
+        img_array = np.array(img).astype(np.float32)
+        img_array = np.transpose(img_array, (2, 0, 1))
+        img_array = (img_array / 255.0 - 0.5) / 0.5
+        return np.expand_dims(img_array, axis=0)
+
+    def classify_color(self, image):
+        """Predict vehicle color from image"""
+        preprocessed = self.preprocess(image)
+        outputs = self.session.run(None, {self.input_name: preprocessed})
+        return self.colors[np.argmax(outputs[0])]
+
+    def crop_vehicle(self, image, bbox):
+        """Crop vehicle region from full image"""
+        return image.crop(bbox)
