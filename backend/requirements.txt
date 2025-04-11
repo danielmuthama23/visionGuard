@@ -1,17 +1,26 @@
 # requirements.txt
-azure-ai-vision==0.15.1b1  # Pre-release version available
+# Core Azure Services
+azure-ai-vision==0.15.1b1  # Verified working version
 azure-search-documents==11.4.0
 azure-identity==1.14.0
-onnxruntime==1.21.0  # Updated to latest available version
-opencv-python==4.8.0.76
-pillow==10.0.0
+azure-core==1.29.0
+
+# Computer Vision & ML
+opencv-python-headless==4.8.1.78
+onnxruntime==1.21.0
+numpy==1.26.0
+pillow==10.1.0
+
+# Blockchain & Networking
+hedera-sdk-py==2.6.0
+grpcio==1.62.0
+protobuf==4.25.3
+
+# Utilities & Orchestration
 langchain==0.1.0
 python-dotenv==1.0.0
-hedera-sdk-py==2.6.0
-
-# Additional dependencies from code analysis
-grpcio==1.54.0
-protobuf==4.23.0
-numpy==1.24.0
 paho-mqtt==1.6.1
-azure-core==1.29.0
+
+# Security & Performance
+cryptography==42.0.5
+setuptools==69.1.0

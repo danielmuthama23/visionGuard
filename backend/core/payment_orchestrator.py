@@ -55,7 +55,7 @@ class PaymentOrchestrator:
                 vehicle_data = json.loads(str(msg))
                 result = await self.process_payment(vehicle_data)
                 await self.results_queue.send_messages(
-                    ServiceBusMessage(json.dumps(result))
+                    ServiceBusMessage(json.dumps(result)))
                 await self.payment_queue.complete_message(msg)
 
     async def validate_nft_payment(self, nft_id):

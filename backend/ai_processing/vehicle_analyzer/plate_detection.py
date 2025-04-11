@@ -1,8 +1,8 @@
 # ai_processing/vehicle_analyzer/plate_detection.py
+# ai_processing/vehicle_analyzer/plate_detection.py
 import cv2
 import numpy as np
 from azure.ai.vision import ImageAnalysisClient
-from azure.ai.vision.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
 from azure.core.exceptions import AzureError
 from PIL import Image
@@ -22,7 +22,7 @@ class PlateDetector:
         try:
             result = self.cloud_client.analyze(
                 image_url=image_url,
-                visual_features=[VisualFeatures.READ]
+                visual_features=["Read"]
             )
             return [line.text for line in result.read.blocks if line.kind == "licensePlate"]
         except AzureError as e:

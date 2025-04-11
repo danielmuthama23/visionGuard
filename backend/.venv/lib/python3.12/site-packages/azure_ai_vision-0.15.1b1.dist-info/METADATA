@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: azure-ai-vision
+Version: 0.15.1b1
+Summary: Microsoft Azure AI Vision SDK for Python
+Author: Microsoft
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+License-File: licensefiles/vision/REDIST.txt
+License-File: licensefiles/vision/ThirdPartyNotices.txt
+License-File: licensefiles/vision/LICENSE.md
+
+
+The Azure AI Vision SDK supports Image Analysis using the 4.0 REST APIs. To learn how to use the SDK,
+have a look at `Quickstart: Image Analysis 4.0 <https://learn.microsoft.com/azure/cognitive-services/computer-vision/quickstarts-sdk/image-analysis-client-library-40?pivots=programming-language-python>`_.
+
+Documentation
+-------------
+
+- `What is Image Analysis? <https://learn.microsoft.com/azure/cognitive-services/computer-vision/overview-image-analysis?tabs=4-0>`_.
+- `Python API documentation <https://learn.microsoft.com/python/api/azure-ai-vision>`_.
+
+License information
+-------------------
+
+- `Microsoft Software License Terms for the Vision SDK <https://aka.ms/azai/vision/license/>`_
+- `Third party notices <https://aka.ms/azai/vision/TPN/>`_
