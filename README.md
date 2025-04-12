@@ -22,57 +22,57 @@ Urban centers face escalating parking inefficiencies, with 30% of traffic conges
 
 VisionGuard transforms urban mobility through an AI-blockchain fusion, leveraging:
 
-Azure Percept Edge AI - Real-time license plate recognition and vehicle classification from CCTV feeds
+**Azure Percept Edge AI** - Real-time license plate recognition and vehicle classification from CCTV feeds
 
-Hedera Hashgraph DLT - Immutable audit trails for parking events and NFT-based transactions
+**Hedera Hashgraph DLT** - Immutable audit trails for parking events and NFT-based transactions
 
-Semantic Kernel Orchestration - Dynamic pricing models adapting to traffic patterns and special events
+**Semantic Kernel Orchestration** - Dynamic pricing models adapting to traffic patterns and special events
 
-Multi-Chain NFT Framework - Hybrid payment system supporting both fiat and cryptocurrency settlements
+**Multi-Chain NFT Framework** - Hybrid payment system supporting both fiat and cryptocurrency settlements
 
 ## Key Capabilities
 
-Real-Time Parking Intelligence
+## Real-Time Parking Intelligence
 
-Congestion Heatmaps: AI-identified bottleneck zones with automated diversion suggestions
+**Congestion Heatmaps:** AI-identified bottleneck zones with automated diversion suggestions
 
-Predictive Availability: Machine learning forecasting parking demand 4hrs ahead
+**Predictive Availability:** Machine learning forecasting parking demand 4hrs ahead
 
-Anomaly Detection: Automatic alerts for unauthorized vehicles or occupancy violations
+**Anomaly Detection:** Automatic alerts for unauthorized vehicles or occupancy violations
 
-Blockchain-Powered Operations
+## Blockchain-Powered Operations
 
-Smart Contract Enforcement: Automated fines for overtime parking via NFT-triggered workflows
+**Smart Contract Enforcement:** Automated fines for overtime parking via NFT-triggered workflows
 
-Fraud-Resistant Ledger: Hashgraph-validated transaction history for dispute resolution
+**Fraud-Resistant Ledger:** Hashgraph-validated transaction history for dispute resolution
 
-Carbon Credit Tracking: Emissions saved through optimized parking integrated with sustainability programs
+**Carbon Credit Tracking:** Emissions saved through optimized parking integrated with sustainability programs
 
 ## Driver Experience Innovations
 
-Augmented Reality Navigation: Live AR overlays showing available spaces via mobile app
+**Augmented Reality Navigation:** Live AR overlays showing available spaces via mobile app
 
-Loyalty NFTs: Discount tokens earned through off-peak usage or EV parking
+**Loyalty NFTs:** Discount tokens earned through off-peak usage or EV parking
 
-Unified Payment Portal: Single wallet supporting HBAR, Bitcoin, and local currency transactions
+**Unified Payment Portal:** Single wallet supporting HBAR, Bitcoin, and local currency transactions
 
 ## Technical Architecture
 
-Azure IoT Edge - Distributed processing of 20,000+ camera feeds across city infrastructure
+**Azure IoT Edge** - Distributed processing of 20,000+ camera feeds across city infrastructure
 
-Hedera Consensus Service - 5-second finality for parking event validation
+**Hedera Consensus Service** - 5-second finality for parking event validation
 
-Azure AI Document Intelligence - Automated permit verification from uploaded documents
+**Azure AI Document Intelligence** - Automated permit verification from uploaded documents
 
-React-SolidJS Hybrid Frontend - Microfrontend architecture for municipal customization
+**React-SolidJS Hybrid Frontend** - Microfrontend architecture for municipal customization
 
 ## Team Roles
 
-Daniel Muthama (AI Architect) - Edge ML deployment, Semantic Kernel workflows
+**Daniel Muthama (AI Architect)** - Edge ML deployment, Semantic Kernel workflows
 
-Eunice Nduku (Blockchain Engineer) - Hashgraph consensus tuning, NFT minting protocols
+**Eunice Nduku (Blockchain Engineer)** - Hashgraph consensus tuning, NFT minting protocols
 
-Daniel Muruthi (Frontend Lead) - AR navigation interfaces, multi-chain wallet integration
+**Daniel Muruthi (Frontend Lead)** - AR navigation interfaces, multi-chain wallet integration
 
 ## Strategic Impact
 
@@ -88,21 +88,21 @@ Real-Time Policy Adjustments via dashboards showing occupancy-tax revenue correl
 
 ## Clinical-Grade Security (Analogous to Genomic Systems)
 
-HIPAA-Compliant Data Vaults: Protected health data for disabled parking permit holders
+**HIPAA-Compliant Data Vaults:** Protected health data for disabled parking permit holders
 
-Zero-Knowledge Proofs: Privacy-preserving vehicle movement analytics
+**Zero-Knowledge Proofs:** Privacy-preserving vehicle movement analytics
 
 FIPS 140-2 Certified: Encryption for payment processing and municipal data sharing
 
 ## Evolution from Traditional Systems
 
-Precision Monitoring: Shift from manual patrols to AI-powered space utilization analytics
+**Precision Monitoring:** Shift from manual patrols to AI-powered space utilization analytics
 
-Adaptive Infrastructure: ML-driven recommendations for parking garage expansions
+**Adaptive Infrastructure:** ML-driven recommendations for parking garage expansions
 
-Community Governance: DAO-style voting for parking policy changes using governance tokens
+**Community Governance:** DAO-style voting for parking policy changes using governance tokens
 
-Interoperability Hub: REST APIs integrating with public transit and ride-share platforms
+**Interoperability Hub:** REST APIs integrating with public transit and ride-share platforms
 
 This architecture positions VisionGuard as the foundational layer for smart city mobility ecosystems, transforming parking data into actionable urban planning insights while establishing new standards for transactional transparency in public infrastructure management.
 
@@ -171,7 +171,6 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 - Docker 24.0+
 - Hedera Testnet Account
 
-```
 # Clone repository
 git clone https://github.com/danielmuthama23/visionguard.git
 cd visionguard
@@ -189,7 +188,6 @@ cp .env.example .env
 
 # 🔧 Configuration
 
-```ini
 # Frontend
 VITE_API_URL=https://api.visionguard.io
 VITE_HEDERA_ACCOUNT_ID=0.0.1234
@@ -202,7 +200,6 @@ COSMOS_DB_CONN_STR=your_cosmos_conn_str
 
 ## 🖥️ Usage
 
-```bash
 # Start development servers
 cd frontend && npm run dev
 cd backend && uvicorn main:app --reload
@@ -218,7 +215,6 @@ docker-compose -f docker-compose.prod.yml up --build
 
 ## 🏗 System Architecture
 
-```mermaid
 graph TD
     A[IoT Cameras] --> B[Azure IoT Hub]
     B --> C[AI Processing]
@@ -228,42 +224,37 @@ graph TD
     F --> G[End Users]
     C --> H[Real-Time Alerts]
 
-    # 🤝 Contributing
+# 🤝 Contributing
 
 1. **Fork the project**  
    Click the 'Fork' button at the top right of the repository page
 
 2. **Create your feature branch**  
-   ```bash
-   git checkout -b feature/AmazingFeature
+git checkout -b feature/AmazingFeature
 Commit your changes
 
-bash
-Copy
 git commit -m 'Add some AmazingFeature'
 Push to the branch
 
-bash
-Copy
 git push origin feature/AmazingFeature
 Open a Pull Request
 Navigate to the original repository and click "New Pull Request"
 
-    # 📄 License
+# 📄 License
 
 Distributed under the MIT License.
 See LICENSE for more information.
 
-    # 📧 Contact
+# 📧 Contact
 
-Daniel Muthama
+### Daniel Muthama
 
-Twitter: @danielmuthama
+**Twitter:** @danielmuthama
 
-Email: daniel@visionguard.io
+**Email:** danielmuthama23@gmail.com
 
-Project Link: https://github.com/danielmuthama23/visionguard
+**Project Link:** https://github.com/danielmuthama23/visionguard
 
-    # 🚀 Happy Coding!
+# 🚀 Happy Coding!
 
 Thank you for considering contributing to VisionGuard!
