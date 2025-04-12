@@ -92,7 +92,7 @@ Real-Time Policy Adjustments via dashboards showing occupancy-tax revenue correl
 
 **Zero-Knowledge Proofs:** Privacy-preserving vehicle movement analytics
 
-FIPS 140-2 Certified: Encryption for payment processing and municipal data sharing
+**FIPS 140-2 Certified:** Encryption for payment processing and municipal data sharing
 
 ### Evolution from Traditional Systems
 
@@ -113,21 +113,25 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 ### 🚀 Features
 
 - **Real-Time Parking Monitoring**
+
   - Live vehicle detection and license plate recognition
   - Dynamic capacity tracking with IoT sensors
   - AI-powered anomaly detection
 
 - **Blockchain Integration**
+
   - NFT-based parking tickets on Hedera Hashgraph
   - Immutable transaction auditing
   - Secure payment processing
 
 - **Smart Analytics**
+
   - Predictive parking demand forecasting
   - Dynamic pricing engine
   - Historical trend visualization
 
 - **IoT Control System**
+
   - MQTT-based light control
   - Edge AI processing with Azure Percept
   - Real-time alert system
@@ -135,29 +139,35 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 ### 🛠️ Tech Stack
 
 **Frontend**  
+
 ![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react)  
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript)  
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?logo=tailwind-css)
 
 **Backend**  
+
 ![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)  
 ![Azure Functions](https://img.shields.io/badge/Azure_Functions-4.0-0089D6)  
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi)
 
 **AI/ML**  
+
 ![Azure Cognitive Services](https://img.shields.io/badge/Azure_AI-2023-0089D6)  
 ![ONNX Runtime](https://img.shields.io/badge/ONNX-1.16-005CED)  
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-EE4C2C?logo=pytorch)
 
 **Blockchain**  
+
 ![Hedera Hashgraph](https://img.shields.io/badge/Hedera-2.6-000?logo=hedera)  
 ![Solidity](https://img.shields.io/badge/Solidity-0.8-363636?logo=solidity)
 
 **Database**  
+
 ![Azure Cosmos DB](https://img.shields.io/badge/Cosmos_DB-NoSQL-004880?logo=azure-cosmos-db)  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql)
 
 **DevOps**  
+
 ![Docker](https://img.shields.io/badge/Docker-24.0-2496ED?logo=docker)  
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-326CE5?logo=kubernetes)  
 ![GitHub Actions](https://img.shields.io/badge/GHA-2023-2088FF?logo=github-actions)
@@ -165,6 +175,7 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 ### ⚙️ Installation
 
 #### Prerequisites
+
 - Node.js 20.x
 - Python 3.10+
 - Azure CLI 2.53+
@@ -172,36 +183,51 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 - Hedera Testnet Account
 
 ### Clone repository
+
 git clone https://github.com/danielmuthama23/visionguard.git
+
 cd visionguard
 
 ### Install frontend dependencies
+
 cd frontend
+
 npm install
 
 ### Install backend dependencies
+
 cd ../backend
+
 pip install -r requirements.txt
 
 ### Set up environment variables
+
 cp .env.example .env
 
 ## 🔧 Configuration
 
 ### Frontend
-VITE_API_URL=https://api.visionguard.io
-VITE_HEDERA_ACCOUNT_ID=0.0.1234
-VITE_MQTT_BROKER=mqtts://iot.visionguard.io
+
+    VITE_API_URL=https://api.visionguard.io
+
+    VITE_HEDERA_ACCOUNT_ID=0.0.1234
+
+    VITE_MQTT_BROKER=mqtts://iot.visionguard.io
 
 ### Backend
-AZURE_CV_KEY=your_azure_cv_key
-HEDERA_PRIVATE_KEY=your_hedera_key
-COSMOS_DB_CONN_STR=your_cosmos_conn_str
+
+    AZURE_CV_KEY=your_azure_cv_key
+
+    HEDERA_PRIVATE_KEY=your_hedera_key
+
+    COSMOS_DB_CONN_STR=your_cosmos_conn_str
 
 ## 🖥️ Usage
 
 ### Start development servers
+
 cd frontend && npm run dev
+
 cd backend && uvicorn main:app --reload
 
 ### Run production build
@@ -231,9 +257,11 @@ graph TD
 
 2. **Create your feature branch**  
 git checkout -b feature/AmazingFeature
+
 Commit your changes
 
 git commit -m 'Add some AmazingFeature'
+
 Push to the branch
 
 git push origin feature/AmazingFeature
@@ -249,7 +277,7 @@ See LICENSE for more information.
 
 ### Daniel Muthama - +254746815371
 
-**Twitter:** @danielmuthama
+**Twitter:** @dti_kenya01
 
 **Email:** danielmuthama23@gmail.com
 
