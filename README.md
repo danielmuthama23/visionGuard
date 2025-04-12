@@ -108,8 +108,17 @@ This architecture positions VisionGuard as the foundational layer for smart city
 
 Next-generation parking management system combining AI, blockchain, and IoT for modern smart cities.
 
-![System Architecture Diagram](docs/architecture.png)
+## 🏗 System Architecture
 
+graph TD
+    A[IoT Cameras] --> B[Azure IoT Hub]
+    B --> C[AI Processing]
+    C --> D[Azure Cosmos DB]
+    D --> E[Blockchain Network]
+    E --> F[React Dashboard]
+    F --> G[End Users]
+    C --> H[Real-Time Alerts]
+    
 ### 🚀 Features
 
 - **Real-Time Parking Monitoring**
@@ -239,16 +248,6 @@ docker-compose -f docker-compose.prod.yml up --build
 - **API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Admin Portal**: [http://localhost:5173/admin](http://localhost:5173/admin)
 
-## 🏗 System Architecture
-
-graph TD
-    A[IoT Cameras] --> B[Azure IoT Hub]
-    B --> C[AI Processing]
-    C --> D[Azure Cosmos DB]
-    D --> E[Blockchain Network]
-    E --> F[React Dashboard]
-    F --> G[End Users]
-    C --> H[Real-Time Alerts]
 
 ## 🤝 Contributing
 
