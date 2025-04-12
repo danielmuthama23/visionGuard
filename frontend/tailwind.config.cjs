@@ -4,7 +4,7 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/index.html"
+    "./index.html"
   ],
   darkMode: ["class", '[data-theme="dark"]'],
   theme: {

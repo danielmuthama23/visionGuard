@@ -21,6 +21,6 @@
     "types": ["vite/client", "node"],
     "noEmit": true
   },
-  "include": ["src", "vite.config.ts"],
+  "include": ["src", "vite.config.ts", "index.html"],
   "exclude": ["node_modules"]
 }
