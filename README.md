@@ -171,7 +171,7 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 - Docker 24.0+
 - Hedera Testnet Account
 
-```bash
+```
 # Clone repository
 git clone https://github.com/danielmuthama23/visionguard.git
 cd visionguard
