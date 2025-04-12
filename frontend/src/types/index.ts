@@ -1,35 +1,45 @@
-export interface ParkingLot {
-  id: string
-  name: string
-  location: string
-  capacity: number
-  currentOccupancy: number
-  hourlyRate: number
-}
+// src/types/index.ts
 
-export interface NFTParkingTicket {
-  id: string
-  plateNumber: string
-  entryTime: Date
-  exitTime: Date | null
-  amountPaid: number
-  transactionHash: string
-}
+export interface WebSocketEvent {
+    eventType: 'vehicle_entry' | 'vehicle_exit' | 'system_alert';
+    timestamp: string;
+    data: {
+      lotId: string;
+      licensePlate?: string;
+      vehicleType?: string;
+      message?: string;
+      nftId?: string;
+    };
+  }
 
-export interface Alert {
-  id: string
-  type: 'capacity' | 'security' | 'payment'
-  severity: 'low' | 'medium' | 'high'
-  message: string
-  timestamp: Date
-  resolved: boolean
-}
+  export interface ParkingLot {
+    id: string;
+    name: string;
+    capacity: number;
+    current: number;
+    status: 'open' | 'closed' | 'full';
+  }
 
-export interface ParkingHistoryEntry {
-  id: string
-  date: Date
-  duration: number
-  location: string
-  amount: number
-  nftId: string
-}
+  export interface AnalyticsData {
+    hourlyData: HourlyData[];
+    dailyTrends: DailyTrend[];
+    stats: AnalyticsStats;
+  }
+  
+  interface HourlyData {
+    hour: string;
+    count: number;
+  }
+  
+  interface DailyTrend {
+    day: string;
+    vehicleType: string;
+    count: number;
+  }
+  
+  interface AnalyticsStats {
+    peakHour: string;
+    averageStay: string;
+    totalRevenue: number;
+    nftsMinted: number;
+  }

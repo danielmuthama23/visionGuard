@@ -24,3 +24,14 @@ paho-mqtt==1.6.1
 # Security & Performance
 cryptography==42.0.5
 setuptools==69.1.0
+
+azure-cosmos>=4.5.0
+azure-search-documents>=11.4.0
+azure-ai-ml>=1.10.0
+azure-ai-generative~=1.0.0b11  # Use available beta version
+azure-eventhub>=5.11.0
+azure-eventhub-checkpointstoreblob-aio>=1.1.0
+
+# Add platform-specific requirements
+gpiozero>=1.6.2; platform_machine != 'armv7l'
+RPi.GPIO>=0.7.0; platform_machine == 'armv7l'

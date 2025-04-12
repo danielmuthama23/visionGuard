@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: azure-ai-generative
+Version: 1.0.0b11
+Summary: Microsoft Azure Machine Learning Client Library for Python
+Home-page: https://github.com/Azure/azure-sdk-for-python
+Author: Microsoft Corporation
+Author-email: azuresdkengsysadmins@microsoft.com
+License: MIT License
+Project-URL: Bug Reports, https://github.com/Azure/azure-sdk-for-python/issues
+Project-URL: Source, https://github.com/Azure/azure-sdk-for-python
+Keywords: azure,azuresdk,azure sdk
+Classifier: Development Status :: 7 - Inactive
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4.0,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: azure-ai-resources >=1.0.0b7
+Requires-Dist: mlflow-skinny <3,>=1.27.0
+Requires-Dist: opencensus-ext-azure ~=1.0
+Requires-Dist: opencensus-ext-logging <=0.1.1
+Provides-Extra: evaluate
+Requires-Dist: azureml-metrics[generative-ai] >=0.0.33 ; extra == 'evaluate'
+Requires-Dist: azureml-mlflow ; extra == 'evaluate'
+Requires-Dist: promptflow[azure] ; extra == 'evaluate'
+Requires-Dist: promptflow-tools ; extra == 'evaluate'
+Provides-Extra: faiss
+Requires-Dist: faiss-cpu <1.8,>=1.7 ; extra == 'faiss'
+Provides-Extra: hugging_face
+Requires-Dist: scikit-learn ; extra == 'hugging_face'
+Requires-Dist: sentence-transformers ; extra == 'hugging_face'
+Provides-Extra: index
+Requires-Dist: azureml-dataprep[parquet] >4.11 ; extra == 'index'
+Requires-Dist: azureml-fsspec >=1 ; extra == 'index'
+Requires-Dist: azureml-mlflow ; extra == 'index'
+Requires-Dist: fsspec >=2023.3 ; extra == 'index'
+Requires-Dist: openai >=0.27.8 ; extra == 'index'
+Requires-Dist: tiktoken <1,>=0.3 ; extra == 'index'
+Requires-Dist: mmh3 ; extra == 'index'
+Requires-Dist: requests ; extra == 'index'
+Requires-Dist: pandas >=1 ; extra == 'index'
+Requires-Dist: nltk <4,>=3.8 ; extra == 'index'
+Requires-Dist: markdown <4,>=3.4 ; extra == 'index'
+Requires-Dist: beautifulsoup4 <5,>=4.11 ; extra == 'index'
+Requires-Dist: tika <3,>=2.6 ; extra == 'index'
+Requires-Dist: pypdf <4,>=3.7 ; extra == 'index'
+Requires-Dist: unstructured <1,>=0.10 ; extra == 'index'
+Requires-Dist: GitPython <4,>=3.1 ; extra == 'index'
+Requires-Dist: azure-search-documents ==11.4.0b11 ; extra == 'index'
+Provides-Extra: promptflow
+Requires-Dist: promptflow[azure] ; extra == 'promptflow'
+Requires-Dist: promptflow-tools ; extra == 'promptflow'
+Provides-Extra: qa_generation
+Requires-Dist: openai >=0.27.8 ; extra == 'qa_generation'
+Provides-Extra: simulator
+Requires-Dist: aiohttp >=3.8.5 ; extra == 'simulator'
+Requires-Dist: aiohttp-retry <3,>=2 ; extra == 'simulator'
+Requires-Dist: Jinja2 <4,>=3 ; extra == 'simulator'
+Requires-Dist: json5 <1,>=0.9 ; extra == 'simulator'
+Requires-Dist: jsonpath-ng <2,>=1 ; extra == 'simulator'
+Requires-Dist: msal <2,>=1 ; extra == 'simulator'
+Requires-Dist: pybase64 <2,>=1 ; extra == 'simulator'
+Requires-Dist: PyYAML <7,>=4.1 ; extra == 'simulator'
+Requires-Dist: tiktoken <1,>=0.3 ; extra == 'simulator'
+Requires-Dist: websocket-client <2,>=1 ; extra == 'simulator'
+Requires-Dist: azure-keyvault-secrets <5,>=1 ; extra == 'simulator'
+
+# Azure AI Generative Package client library for Python
+
+This package has been deprecated and will no longer be maintained. 
+
+Please refer to new package [Azure AI Evaluation](https://pypi.org/project/azure-ai-evaluation/) for evaluating Generative AI applications that leverage Azure AI services. 
+
+
+# Release History
+
+## 1.0.0b11 (2024-10-04)
+
+### Other Changes
+- Deprecation message added. 
+
+## 1.0.0b10 (2024-10-03)
+
+### Bugs Fixed
+
+- Bug fixes
+
+## 1.0.0b9 (2024-09-16)
+
+### Bugs Fixed
+
+- Bug fixes
+
+## 1.0.0b8 (2024-03-27)
+
+### Other Changes
+- Bug fixes
+
+## 1.0.0b7 (2024-02-07)
+
+### Other Changes
+
+- Bug fixes
+
+## 1.0.0b6 (2024-02-06)
+
+### Other Changes
+
+- Recursive Text Splitter is now enabled by default for local index builds which mimics behavior of cloud index builds
+- Bug fixes
+
+## 1.0.0b5 (2024-02-02)
+
+### Features Added
+
+- Supports evaluate() on chat
+
+### Bugs Fixed
+
+- Fix promptflow evaluation bugs
+
+### Other Changes
+
+- Duplicate cleanup
+
+## 1.0.0b4 (2024-02-01)
+
+### Features Added
+
+- Support custom metrics for evaluation
+
+### Other Changes
+
+- Switched evaluate() function to run on promptflow engine
+- Use openai v1 environment variable
+
+## 1.0.0b3 (2024-01-30)
+
+### Other Changes
+
+- Support for Python 3.12
+
+## 1.0.0b2 (2023-11-30)
+
+### Features Added
+
+- Added new format to export data to in qa generator.
+
+### Other Changes
+
+- Dependency improvements.
+
+## 1.0.0b1 (2023-11-10)
+
+### Features Added
+
+- Try use langchain VectorStore and fallback to vendor.
+- Add azure-search-documents 11.4.0b11 and above support.
+- Invoke OpenAI with dynamic batch size.
+- Fix LangChain importing path
+- First preview.

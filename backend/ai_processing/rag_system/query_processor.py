@@ -1,45 +1,29 @@
-# ai_processing/rag_system/query_processor.py
-from langchain.chains import RetrievalQA
-from langchain.llms import AzureOpenAI
-from azure.search.documents import SearchClient
+from semantic_kernel import Kernel
+from semantic_kernel.planning import ActionPlanner
 
 class RAGQueryProcessor:
-    def __init__(self, search_endpoint, search_key, index_name):
-        self.llm = AzureOpenAI(
-            deployment_name="gpt-4",
-            temperature=0.1
-        )
+    def __init__(self, vector_store, foundry_client):
+        self.kernel = Kernel()
+        self.planner = ActionPlanner(self.kernel)
+        self.vector_store = vector_store
+        self.foundry_client = foundry_client
         
-        self.search_client = SearchClient(
-            endpoint=search_endpoint,
-            index_name=index_name,
-            credential=AzureKeyCredential(search_key)
+        # Register skills
+        self.kernel.import_skill(ParkingInsightSkill(vector_store), "ParkingInsights")
+        
+    async def natural_language_query(self, query):
+        # Semantic Kernel planning
+        plan = await self.planner.create_plan_async(query)
+        
+        # Execute plan with Foundry integration
+        result = await plan.invoke_async(
+            variables={
+                "query": query,
+                "foundry_data": self._get_foundry_context()
+            }
         )
+        return result
 
-    def create_chain(self):
-        return RetrievalQA.from_chain_type(
-            llm=self.llm,
-            chain_type="stuff",
-            retriever=self._custom_retriever(),
-            return_source_documents=True
-        )
-
-    def _custom_retriever(self):
-        def _retriever(query):
-            vector = self._get_embedding(query)
-            results = self.search_client.search(
-                search_text="",
-                vector=vector,
-                top_k=3,
-                vector_fields="embedding"
-            )
-            return [doc["content"] for doc in results]
-        return _retriever
-
-    def _get_embedding(self, text):
-        # Use Azure OpenAI embeddings
-        response = openai.Embedding.create(
-            input=text,
-            engine="text-embedding-ada-002"
-        )
-        return response['data'][0]['embedding']
+    def _get_foundry_context(self):
+        # Retrieve operational data from AI Foundry
+        return self.foundry_client.get_insight_model("parking-analytics-v2")
