@@ -1,4 +1,4 @@
-# VisionGuard: Smart City Parking Management System
+## VisionGuard: Smart City Parking Management System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?logo=microsoft-azure)](https://azure.microsoft.com)
@@ -6,7 +6,7 @@
 
 VisionGuard is an AI-Driven Smart City Parking Management with Blockchain Auditing and NFT Payment Integration
 
-## Problem Context
+### Problem Context
 
 Urban centers face escalating parking inefficiencies, with 30% of traffic congestion stemming from drivers seeking parking. Traditional systems lack real-time adaptability, secure transaction tracking, and data-driven optimization, leading to:
 
@@ -18,7 +18,7 @@ Urban centers face escalating parking inefficiencies, with 30% of traffic conges
 
     Fragmented data silos between parking operators and city planners
 
-## Innovative Solution
+### Innovative Solution
 
 VisionGuard transforms urban mobility through an AI-blockchain fusion, leveraging:
 
@@ -30,9 +30,9 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **Multi-Chain NFT Framework** - Hybrid payment system supporting both fiat and cryptocurrency settlements
 
-## Key Capabilities
+### Key Capabilities
 
-## Real-Time Parking Intelligence
+### Real-Time Parking Intelligence
 
 **Congestion Heatmaps:** AI-identified bottleneck zones with automated diversion suggestions
 
@@ -40,7 +40,7 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **Anomaly Detection:** Automatic alerts for unauthorized vehicles or occupancy violations
 
-## Blockchain-Powered Operations
+### Blockchain-Powered Operations
 
 **Smart Contract Enforcement:** Automated fines for overtime parking via NFT-triggered workflows
 
@@ -48,7 +48,7 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **Carbon Credit Tracking:** Emissions saved through optimized parking integrated with sustainability programs
 
-## Driver Experience Innovations
+### Driver Experience Innovations
 
 **Augmented Reality Navigation:** Live AR overlays showing available spaces via mobile app
 
@@ -56,7 +56,7 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **Unified Payment Portal:** Single wallet supporting HBAR, Bitcoin, and local currency transactions
 
-## Technical Architecture
+### Technical Architecture
 
 **Azure IoT Edge** - Distributed processing of 20,000+ camera feeds across city infrastructure
 
@@ -66,7 +66,7 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **React-SolidJS Hybrid Frontend** - Microfrontend architecture for municipal customization
 
-## Team Roles
+### Team Roles
 
 **Daniel Muthama (AI Architect)** - Edge ML deployment, Semantic Kernel workflows
 
@@ -74,7 +74,7 @@ VisionGuard transforms urban mobility through an AI-blockchain fusion, leveragin
 
 **Daniel Muruthi (Frontend Lead)** - AR navigation interfaces, multi-chain wallet integration
 
-## Strategic Impact
+### Strategic Impact
 
 VisionGuard's multi-layered approach delivers:
 
@@ -86,7 +86,7 @@ VisionGuard's multi-layered approach delivers:
 
 Real-Time Policy Adjustments via dashboards showing occupancy-tax revenue correlations
 
-## Clinical-Grade Security (Analogous to Genomic Systems)
+### Clinical-Grade Security (Analogous to Genomic Systems)
 
 **HIPAA-Compliant Data Vaults:** Protected health data for disabled parking permit holders
 
@@ -94,7 +94,7 @@ Real-Time Policy Adjustments via dashboards showing occupancy-tax revenue correl
 
 FIPS 140-2 Certified: Encryption for payment processing and municipal data sharing
 
-## Evolution from Traditional Systems
+### Evolution from Traditional Systems
 
 **Precision Monitoring:** Shift from manual patrols to AI-powered space utilization analytics
 
@@ -110,7 +110,7 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 
 ![System Architecture Diagram](docs/architecture.png)
 
-## 🚀 Features
+### 🚀 Features
 
 - **Real-Time Parking Monitoring**
   - Live vehicle detection and license plate recognition
@@ -132,7 +132,7 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
   - Edge AI processing with Azure Percept
   - Real-time alert system
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 **Frontend**  
 ![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react)  
@@ -162,49 +162,49 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-326CE5?logo=kubernetes)  
 ![GitHub Actions](https://img.shields.io/badge/GHA-2023-2088FF?logo=github-actions)
 
-## ⚙️ Installation
+### ⚙️ Installation
 
-### Prerequisites
+#### Prerequisites
 - Node.js 20.x
 - Python 3.10+
 - Azure CLI 2.53+
 - Docker 24.0+
 - Hedera Testnet Account
 
-# Clone repository
+### Clone repository
 git clone https://github.com/danielmuthama23/visionguard.git
 cd visionguard
 
-# Install frontend dependencies
+### Install frontend dependencies
 cd frontend
 npm install
 
-# Install backend dependencies
+### Install backend dependencies
 cd ../backend
 pip install -r requirements.txt
 
-# Set up environment variables
+### Set up environment variables
 cp .env.example .env
 
-# 🔧 Configuration
+## 🔧 Configuration
 
-# Frontend
+### Frontend
 VITE_API_URL=https://api.visionguard.io
 VITE_HEDERA_ACCOUNT_ID=0.0.1234
 VITE_MQTT_BROKER=mqtts://iot.visionguard.io
 
-# Backend
+### Backend
 AZURE_CV_KEY=your_azure_cv_key
 HEDERA_PRIVATE_KEY=your_hedera_key
 COSMOS_DB_CONN_STR=your_cosmos_conn_str
 
 ## 🖥️ Usage
 
-# Start development servers
+### Start development servers
 cd frontend && npm run dev
 cd backend && uvicorn main:app --reload
 
-# Run production build
+### Run production build
 docker-compose -f docker-compose.prod.yml up --build
 
 ## 🌐 Access Interfaces
@@ -224,7 +224,7 @@ graph TD
     F --> G[End Users]
     C --> H[Real-Time Alerts]
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 1. **Fork the project**  
    Click the 'Fork' button at the top right of the repository page
@@ -240,14 +240,14 @@ git push origin feature/AmazingFeature
 Open a Pull Request
 Navigate to the original repository and click "New Pull Request"
 
-# 📄 License
+## 📄 License
 
 Distributed under the MIT License.
 See LICENSE for more information.
 
-# 📧 Contact
+## 📧 Contact
 
-### Daniel Muthama
+### Daniel Muthama - +254746815371
 
 **Twitter:** @danielmuthama
 
@@ -255,6 +255,6 @@ See LICENSE for more information.
 
 **Project Link:** https://github.com/danielmuthama23/visionguard
 
-# 🚀 Happy Coding!
+### 🚀 Happy Coding!
 
 Thank you for considering contributing to VisionGuard!
