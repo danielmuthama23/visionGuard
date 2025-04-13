@@ -249,7 +249,8 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 ## 🤝 Contributing
 
 1. **Fork the project**  
-   Click the 'Fork' button at the top right of the repository page
+
+    Click the 'Fork' button at the top right of the repository page
 
 2. **Create your feature branch**  
 
