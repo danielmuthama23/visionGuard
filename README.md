@@ -211,6 +211,61 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 
     pip install -r requirements.txt
 
+### Run AI processing
+
+    # Start vehicle analysis
+    python -m ai_processing.vehicle_analyzer.plate_detection &
+    python -m ai_processing.vehicle_analyzer.color_classifier &
+    python -m ai_processing.vehicle_analyzer.vehicle_type &
+
+    # Initialize RAG system
+    python -m ai_processing.rag_system.vector_store create-index
+
+### Run Blockchain
+
+    # Testnet setup
+    python -m blockchain.hashgraph_client.testnet_connector setup
+
+    # NFT Minting Service
+    python -m blockchain.nft_minting.hts_nft create-collection &
+    python -m blockchain.nft_minting.payment_verifier &
+
+### Launch IOT
+
+# MQTT Broker
+    mosquitto -c /etc/mosquitto/mosquitto.conf -v &
+
+    # Light controller
+    python -m iot_control.light_controller.signal_handler &
+
+    # Edge processing
+    python -m iot_control.edge_processing.camera_adapter &
+
+### Initialize Core System
+
+    # State management
+    python -m core.state_manager &
+
+    # Payment orchestration
+    python -m core.payment_orchestrator &
+
+    # Alert system
+    python -m core.alert_system &
+
+### Infrastructure Deployment
+
+    # Azure deployment
+    az login
+    az deployment group create \
+    --template-file infrastructure/main.bicep \
+    --resource-group VisionGuard-RG
+
+    # Docker setup
+    docker-compose -f infrastructure/docker-compose.yml up -d
+
+    # Kubernetes deployment (if using)
+    helm install visionguard infrastructure/helm-charts/
+
 ### Set up environment variables
 
     cp .env.example .env
