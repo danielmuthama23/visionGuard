@@ -4,6 +4,11 @@
 [![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?logo=microsoft-azure)](https://azure.microsoft.com)
 [![React](https://img.shields.io/badge/React-20232a?logo=react)](https://reactjs.org/)
 
+<div align="center">
+  <img src="/images/x4.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Smart City</h3>
+</div>
+
 VisionGuard is an AI-Driven Smart City Parking Management with Blockchain Auditing and NFT Payment Integration
 
 ### Problem Context
