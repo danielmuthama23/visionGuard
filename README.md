@@ -181,33 +181,33 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 
 #### Prerequisites
 
-- Node.js 20.x
-- Python 3.10+
-- Azure CLI 2.53+
-- Docker 24.0+
-- Hedera Testnet Account
+    - Node.js 20.x
+    - Python 3.10+
+    - Azure CLI 2.53+
+    - Docker 24.0+
+    - Hedera Testnet Account
 
 ### Clone repository
 
-git clone https://github.com/danielmuthama23/visionguard.git
+    git clone https://github.com/danielmuthama23/visionguard.git
 
-cd visionguard
+    cd visionguard
 
 ### Install frontend dependencies
 
-cd frontend
+    cd frontend
 
-npm install
+    npm install
 
 ### Install backend dependencies
 
-cd ../backend
+    cd ../backend
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ### Set up environment variables
 
-cp .env.example .env
+    cp .env.example .env
 
 ## 🔧 Configuration
 
@@ -231,12 +231,13 @@ cp .env.example .env
 
 ### Start development servers
 
-cd frontend && npm run dev
+    cd frontend && npm run dev
 
-cd backend && uvicorn main:app --reload
+    cd backend && uvicorn main:app --reload
 
 ### Run production build
-docker-compose -f docker-compose.prod.yml up --build
+
+    docker-compose -f docker-compose.prod.yml up --build
 
 ## 🌐 Access Interfaces
 
@@ -251,16 +252,19 @@ docker-compose -f docker-compose.prod.yml up --build
    Click the 'Fork' button at the top right of the repository page
 
 2. **Create your feature branch**  
-git checkout -b feature/AmazingFeature
 
-Commit your changes
+    git checkout -b feature/AmazingFeature
 
-git commit -m 'Add some AmazingFeature'
+**Commit your changes**
 
-Push to the branch
+    git commit -m 'Add some AmazingFeature'
 
-git push origin feature/AmazingFeature
-Open a Pull Request
+**Push to the branch**
+
+    git push origin feature/AmazingFeature
+
+**Open a Pull Request**
+
 Navigate to the original repository and click "New Pull Request"
 
 ## 📄 License
