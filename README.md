@@ -266,6 +266,30 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
     # Kubernetes deployment (if using)
     helm install visionguard infrastructure/helm-charts/
 
+### System Integration
+
+    Data Flow:
+    1. IoT Camera → Edge Processing → AI Analysis
+    2. AI Results → Core State Manager
+    3. State Changes → Blockchain NFT Minting
+    4. Updates → Frontend via WebSocket/API
+
+    API Endpoints:
+    - POST /api/parking/entry
+    - GET /api/analytics
+    - GET /api/nfts
+
+### Test
+
+    # Run integration tests
+    pytest tests/test_integration.py
+
+    # Check system status
+    curl http://localhost:8000/health
+
+    # Test NFT creation
+    python -m tests.test_blockchain
+
 ### Set up environment variables
 
     cp .env.example .env
