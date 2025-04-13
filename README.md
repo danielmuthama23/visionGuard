@@ -141,6 +141,7 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
   - Edge AI processing with Azure Percept
   - Real-time alert system
 
+
 ### 🛠️ Tech Stack
 
 **Frontend**  
@@ -213,11 +214,26 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 
 ### Frontend
 
-    VITE_API_URL=https://api.visionguard.io
+    VITE_API_URL=""
 
     VITE_HEDERA_ACCOUNT_ID=0.0.1234
 
     VITE_MQTT_BROKER=mqtts://iot.visionguard.io
+
+    <div align="center">
+  <img src="/images/x.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Loading... Page</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Light View</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x2.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Dark View</h3>
+</div>
 
 ### Backend
 
