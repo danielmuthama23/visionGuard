@@ -110,15 +110,11 @@ Next-generation parking management system combining AI, blockchain, and IoT for 
 
 ## 🏗 System Architecture
 
-graph TD
-    A[IoT Cameras] --> B[Azure IoT Hub]
-    B --> C[AI Processing]
-    C --> D[Azure Cosmos DB]
-    D --> E[Blockchain Network]
-    E --> F[React Dashboard]
-    F --> G[End Users]
-    C --> H[Real-Time Alerts]
-    
+<div align="center">
+  <img src="/images/visionguardo.drawio.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>AI-Powered Parking Management with Blockchain Integration</h3>
+</div>
+
 ### 🚀 Features
 
 - **Real-Time Parking Monitoring**
