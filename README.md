@@ -275,11 +275,11 @@ See LICENSE for more information.
 
 ## 📧 Contact
 
-### Daniel Muthama - +254746815371
+    Daniel Muthama: - +254746815371
 
-**Twitter:** @dti_kenya01
+    Twitter: @dti_kenya01
 
-**Email:** danielmuthama23@gmail.com
+    Email: danielmuthama23@gmail.com
 
 **Project Link:** https://github.com/danielmuthama23/visionguard
 
