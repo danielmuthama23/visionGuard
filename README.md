@@ -91,7 +91,9 @@ VisionGuard transforms urban mobility through:
 - Azure CLI 2.53+
 - Docker 24.0+
 
-    git clone https://github.com/danielmuthama23/visionguard.git
+### Repo:
+
+    git clone https://github.com/danielmuthama23/visionguard.git 
     cd visionguard
 
 # Frontend setup
