@@ -102,6 +102,44 @@ VisionGuard transforms urban mobility through:
 # Backend setup
     cd ../backend && pip install -r requirements.txt
 
+
+## 🔧 Configuration
+
+### Frontend
+
+    VITE_API_URL=""
+
+    VITE_HEDERA_ACCOUNT_ID=0.0.1234
+
+    VITE_MQTT_BROKER=mqtts://iot.visionguard.io
+
+    <div align="center">
+  <img src="/images/x.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Loading... Page</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Light View</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x2.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Dark View</h3>
+</div>
+
+### Backend
+
+    AZURE_CV_KEY=your_azure_cv_key
+
+    HEDERA_PRIVATE_KEY=your_hedera_key
+
+    COSMOS_DB_CONN_STR=your_cosmos_conn_str
+
+## 🖥️ Usage
+
+### Backend
+
 ### Run AI processing
 
     # Start vehicle analysis
@@ -183,52 +221,12 @@ VisionGuard transforms urban mobility through:
 
 ### Set up environment variables
 
-    cp .env.example .env
-
-## 🔧 Configuration
+    cp .env
 
 ### Frontend
 
-    VITE_API_URL=""
-
-    VITE_HEDERA_ACCOUNT_ID=0.0.1234
-
-    VITE_MQTT_BROKER=mqtts://iot.visionguard.io
-
-    <div align="center">
-  <img src="/images/x.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Loading... Page</h3>
-</div>
-
-<div align="center">
-  <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Light View</h3>
-</div>
-
-<div align="center">
-  <img src="/images/x2.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Dark View</h3>
-</div>
-
-### Backend
-
-    AZURE_CV_KEY=your_azure_cv_key
-
-    HEDERA_PRIVATE_KEY=your_hedera_key
-
-    COSMOS_DB_CONN_STR=your_cosmos_conn_str
-
-## 🖥️ Usage
-
-### Start development servers
-
     cd frontend && npm run dev
 
-    cd backend && uvicorn main:app --reload
-
-### Run production build
-
-    docker-compose -f docker-compose.prod.yml up --build
 
 ## 🌐 Access Interfaces
 
