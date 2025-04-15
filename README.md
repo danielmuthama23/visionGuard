@@ -102,6 +102,140 @@ VisionGuard transforms urban mobility through:
 # Backend setup
     cd ../backend && pip install -r requirements.txt
 
+### Run AI processing
+
+    # Start vehicle analysis
+    python -m ai_processing.vehicle_analyzer.plate_detection &
+    python -m ai_processing.vehicle_analyzer.color_classifier &
+    python -m ai_processing.vehicle_analyzer.vehicle_type &
+
+    # Initialize RAG system
+    python -m ai_processing.rag_system.vector_store create-index
+
+### Run Blockchain
+
+    # Testnet setup
+    python -m blockchain.hashgraph_client.testnet_connector setup
+
+    # NFT Minting Service
+    python -m blockchain.nft_minting.hts_nft create-collection &
+    python -m blockchain.nft_minting.payment_verifier &
+
+### Launch IOT
+
+# MQTT Broker
+    mosquitto -c /etc/mosquitto/mosquitto.conf -v &
+
+    # Light controller
+    python -m iot_control.light_controller.signal_handler &
+
+    # Edge processing
+    python -m iot_control.edge_processing.camera_adapter &
+
+### Initialize Core System
+
+    # State management
+    python -m core.state_manager &
+
+    # Payment orchestration
+    python -m core.payment_orchestrator &
+
+    # Alert system
+    python -m core.alert_system &
+
+### Infrastructure Deployment
+
+    # Azure deployment
+    az login
+    az deployment group create \
+    --template-file infrastructure/main.bicep \
+    --resource-group VisionGuard-RG
+
+    # Docker setup
+    docker-compose -f infrastructure/docker-compose.yml up -d
+
+    # Kubernetes deployment (if using)
+    helm install visionguard infrastructure/helm-charts/
+
+### System Integration
+
+    Data Flow:
+    1. IoT Camera → Edge Processing → AI Analysis
+    2. AI Results → Core State Manager
+    3. State Changes → Blockchain NFT Minting
+    4. Updates → Frontend via WebSocket/API
+
+    API Endpoints:
+    - POST /api/parking/entry
+    - GET /api/analytics
+    - GET /api/nfts
+
+### Test
+
+    # Run integration tests
+    pytest tests/test_integration.py
+
+    # Check system status
+    curl http://localhost:8000/health
+
+    # Test NFT creation
+    python -m tests.test_blockchain
+
+### Set up environment variables
+
+    cp .env.example .env
+
+## 🔧 Configuration
+
+### Frontend
+
+    VITE_API_URL=""
+
+    VITE_HEDERA_ACCOUNT_ID=0.0.1234
+
+    VITE_MQTT_BROKER=mqtts://iot.visionguard.io
+
+    <div align="center">
+  <img src="/images/x.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Loading... Page</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Light View</h3>
+</div>
+
+<div align="center">
+  <img src="/images/x2.png" alt="VisionGuard Dashboard Preview" width="800">
+  <h3>Frontend Dark View</h3>
+</div>
+
+### Backend
+
+    AZURE_CV_KEY=your_azure_cv_key
+
+    HEDERA_PRIVATE_KEY=your_hedera_key
+
+    COSMOS_DB_CONN_STR=your_cosmos_conn_str
+
+## 🖥️ Usage
+
+### Start development servers
+
+    cd frontend && npm run dev
+
+    cd backend && uvicorn main:app --reload
+
+### Run production build
+
+    docker-compose -f docker-compose.prod.yml up --build
+
+## 🌐 Access Interfaces
+
+- **Web Dashboard**: [http://localhost:5173](http://localhost:5173)
+- **API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Admin Portal**: [http://localhost:5173/admin](http://localhost:5173/admin)
+
 
 ## 📄 License
 
