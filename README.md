@@ -1,4 +1,4 @@
-## VisionGuard: Smart City Parking Management System
+## VisionGuard: Smart City Parking Managem# VisionGuard: Smart City Parking Management System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?logo=microsoft-azure)](https://azure.microsoft.com)
@@ -6,367 +6,100 @@
 
 <div align="center">
   <img src="/images/x4.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Smart City</h3>
-</div>
-
-VisionGuard is an AI-Driven Smart City Parking Management with Blockchain Auditing and NFT Payment Integration
-
-### Problem Context
-
-Urban centers face escalating parking inefficiencies, with 30% of traffic congestion stemming from drivers seeking parking. Traditional systems lack real-time adaptability, secure transaction tracking, and data-driven optimization, leading to:
-
-    Manual occupancy verification errors
-
-    Static pricing models ignoring demand fluctuations
-
-    Fraud vulnerabilities in payment processing
-
-    Fragmented data silos between parking operators and city planners
-
-### Innovative Solution
-
-VisionGuard transforms urban mobility through an AI-blockchain fusion, leveraging:
-
-**Azure Percept Edge AI** - Real-time license plate recognition and vehicle classification from CCTV feeds
-
-**Hedera Hashgraph DLT** - Immutable audit trails for parking events and NFT-based transactions
-
-**Semantic Kernel Orchestration** - Dynamic pricing models adapting to traffic patterns and special events
-
-**Multi-Chain NFT Framework** - Hybrid payment system supporting both fiat and cryptocurrency settlements
-
-### Key Capabilities
-
-### Real-Time Parking Intelligence
-
-**Congestion Heatmaps:** AI-identified bottleneck zones with automated diversion suggestions
-
-**Predictive Availability:** Machine learning forecasting parking demand 4hrs ahead
-
-**Anomaly Detection:** Automatic alerts for unauthorized vehicles or occupancy violations
-
-### Blockchain-Powered Operations
-
-**Smart Contract Enforcement:** Automated fines for overtime parking via NFT-triggered workflows
-
-**Fraud-Resistant Ledger:** Hashgraph-validated transaction history for dispute resolution
-
-**Carbon Credit Tracking:** Emissions saved through optimized parking integrated with sustainability programs
-
-### Driver Experience Innovations
-
-**Augmented Reality Navigation:** Live AR overlays showing available spaces via mobile app
-
-**Loyalty NFTs:** Discount tokens earned through off-peak usage or EV parking
-
-**Unified Payment Portal:** Single wallet supporting HBAR, Bitcoin, and local currency transactions
-
-### Technical Architecture
-
-**Azure IoT Edge** - Distributed processing of 20,000+ camera feeds across city infrastructure
-
-**Hedera Consensus Service** - 5-second finality for parking event validation
-
-**Azure AI Document Intelligence** - Automated permit verification from uploaded documents
-
-**React-SolidJS Hybrid Frontend** - Microfrontend architecture for municipal customization
-
-### Team Roles
-
-**Daniel Muthama (AI Architect)** - Edge ML deployment, Semantic Kernel workflows
-
-**Eunice Nduku (Blockchain Engineer)** - Hashgraph consensus tuning, NFT minting protocols
-
-**Daniel Muruthi (Frontend Lead)** - AR navigation interfaces, multi-chain wallet integration
-
-### Strategic Impact
-
-VisionGuard's multi-layered approach delivers:
-
-    40% Reduction in parking-related emissions through optimized routing
-
-    15% Revenue Increase via dynamic pricing aligned with event schedules
-
-    83% Faster dispute resolution with blockchain-immutable evidence logs
-
-Real-Time Policy Adjustments via dashboards showing occupancy-tax revenue correlations
-
-### Clinical-Grade Security (Analogous to Genomic Systems)
-
-**HIPAA-Compliant Data Vaults:** Protected health data for disabled parking permit holders
-
-**Zero-Knowledge Proofs:** Privacy-preserving vehicle movement analytics
-
-**FIPS 140-2 Certified:** Encryption for payment processing and municipal data sharing
-
-### Evolution from Traditional Systems
-
-**Precision Monitoring:** Shift from manual patrols to AI-powered space utilization analytics
-
-**Adaptive Infrastructure:** ML-driven recommendations for parking garage expansions
-
-**Community Governance:** DAO-style voting for parking policy changes using governance tokens
-
-**Interoperability Hub:** REST APIs integrating with public transit and ride-share platforms
-
-This architecture positions VisionGuard as the foundational layer for smart city mobility ecosystems, transforming parking data into actionable urban planning insights while establishing new standards for transactional transparency in public infrastructure management.
-
-Next-generation parking management system combining AI, blockchain, and IoT for modern smart cities.
-
-## 🏗 System Architecture
-
-<div align="center">
-  <img src="/images/visionguardo.drawio.png" alt="VisionGuard Dashboard Preview" width="800">
   <h3>AI-Powered Parking Management with Blockchain Integration</h3>
 </div>
 
-### 🚀 Features
+## 📖 Table of Contents
+- [Problem Statement](#-problem-statement)
+- [Solution Overview](#-solution-overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [License](#-license)
+- [Contact](#-contact)
 
-- **Real-Time Parking Monitoring**
+## 🎯 Problem Statement
 
-  - Live vehicle detection and license plate recognition
-  - Dynamic capacity tracking with IoT sensors
-  - AI-powered anomaly detection
+Urban centers face critical parking challenges:
+- 30% traffic congestion from parking searches
+- Manual verification errors
+- Static pricing models
+- Fraud vulnerabilities
+- Fragmented data systems
 
-- **Blockchain Integration**
+## 💡 Solution Overview
 
-  - NFT-based parking tickets on Hedera Hashgraph
-  - Immutable transaction auditing
-  - Secure payment processing
+VisionGuard transforms urban mobility through:
+- **Azure Percept Edge AI**: Real-time license plate recognition
+- **Hedera Hashgraph DLT**: Immutable transaction auditing
+- **Semantic Kernel**: Dynamic pricing models
+- **Multi-Chain NFT Framework**: Hybrid payment system
 
-- **Smart Analytics**
+<div align="center">
+  <img src="/images/visionguardo.drawio.png" alt="System Architecture" width="800">
+</div>
 
-  - Predictive parking demand forecasting
-  - Dynamic pricing engine
-  - Historical trend visualization
+## ✨ Key Features
 
-- **IoT Control System**
+### 🚗 Real-Time Monitoring
+- Live vehicle detection & classification
+- IoT sensor integration
+- Anomaly detection
 
-  - MQTT-based light control
-  - Edge AI processing with Azure Percept
-  - Real-time alert system
+### 🔗 Blockchain Integration
+- NFT-based parking tickets
+- Smart contract enforcement
+- Carbon credit tracking
 
+### 📈 Smart Analytics
+- Predictive demand forecasting
+- Dynamic pricing engine
+- Historical trend analysis
 
-### 🛠️ Tech Stack
+### ⚡ IoT Control
+- MQTT-based light control
+- Edge AI processing
+- Real-time alert system
 
-**Frontend**  
-
-![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react)  
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript)  
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?logo=tailwind-css)
-
-**Backend**  
-
-![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)  
-![Azure Functions](https://img.shields.io/badge/Azure_Functions-4.0-0089D6)  
-![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi)
-
-**AI/ML**  
-
-![Azure Cognitive Services](https://img.shields.io/badge/Azure_AI-2023-0089D6)  
-![ONNX Runtime](https://img.shields.io/badge/ONNX-1.16-005CED)  
-![PyTorch](https://img.shields.io/badge/PyTorch-2.1-EE4C2C?logo=pytorch)
-
-**Blockchain**  
-
-![Hedera Hashgraph](https://img.shields.io/badge/Hedera-2.6-000?logo=hedera)  
-![Solidity](https://img.shields.io/badge/Solidity-0.8-363636?logo=solidity)
-
-**Database**  
-
-![Azure Cosmos DB](https://img.shields.io/badge/Cosmos_DB-NoSQL-004880?logo=azure-cosmos-db)  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql)
-
-**DevOps**  
-
-![Docker](https://img.shields.io/badge/Docker-24.0-2496ED?logo=docker)  
-![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-326CE5?logo=kubernetes)  
-![GitHub Actions](https://img.shields.io/badge/GHA-2023-2088FF?logo=github-actions)
-
-### ⚙️ Installation
-
-#### Prerequisites
-
-    - Node.js 20.x
-    - Python 3.10+
-    - Azure CLI 2.53+
-    - Docker 24.0+
-    - Hedera Testnet Account
-
-### Clone repository
-
-    git clone https://github.com/danielmuthama23/visionguard.git
-
-    cd visionguard
-
-### Install frontend dependencies
-
-    cd frontend
-
-    npm install
-
-### Install backend dependencies
-
-    cd ../backend
-
-    pip install -r requirements.txt
-
-### Run AI processing
-
-    # Start vehicle analysis
-    python -m ai_processing.vehicle_analyzer.plate_detection &
-    python -m ai_processing.vehicle_analyzer.color_classifier &
-    python -m ai_processing.vehicle_analyzer.vehicle_type &
-
-    # Initialize RAG system
-    python -m ai_processing.rag_system.vector_store create-index
-
-### Run Blockchain
-
-    # Testnet setup
-    python -m blockchain.hashgraph_client.testnet_connector setup
-
-    # NFT Minting Service
-    python -m blockchain.nft_minting.hts_nft create-collection &
-    python -m blockchain.nft_minting.payment_verifier &
-
-### Launch IOT
-
-# MQTT Broker
-    mosquitto -c /etc/mosquitto/mosquitto.conf -v &
-
-    # Light controller
-    python -m iot_control.light_controller.signal_handler &
-
-    # Edge processing
-    python -m iot_control.edge_processing.camera_adapter &
-
-### Initialize Core System
-
-    # State management
-    python -m core.state_manager &
-
-    # Payment orchestration
-    python -m core.payment_orchestrator &
-
-    # Alert system
-    python -m core.alert_system &
-
-### Infrastructure Deployment
-
-    # Azure deployment
-    az login
-    az deployment group create \
-    --template-file infrastructure/main.bicep \
-    --resource-group VisionGuard-RG
-
-    # Docker setup
-    docker-compose -f infrastructure/docker-compose.yml up -d
-
-    # Kubernetes deployment (if using)
-    helm install visionguard infrastructure/helm-charts/
-
-### System Integration
-
-    Data Flow:
-    1. IoT Camera → Edge Processing → AI Analysis
-    2. AI Results → Core State Manager
-    3. State Changes → Blockchain NFT Minting
-    4. Updates → Frontend via WebSocket/API
-
-    API Endpoints:
-    - POST /api/parking/entry
-    - GET /api/analytics
-    - GET /api/nfts
-
-### Test
-
-    # Run integration tests
-    pytest tests/test_integration.py
-
-    # Check system status
-    curl http://localhost:8000/health
-
-    # Test NFT creation
-    python -m tests.test_blockchain
-
-### Set up environment variables
-
-    cp .env.example .env
-
-## 🔧 Configuration
+## 🛠 Tech Stack
 
 ### Frontend
-
-    VITE_API_URL=""
-
-    VITE_HEDERA_ACCOUNT_ID=0.0.1234
-
-    VITE_MQTT_BROKER=mqtts://iot.visionguard.io
-
-    <div align="center">
-  <img src="/images/x.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Loading... Page</h3>
-</div>
-
-<div align="center">
-  <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Light View</h3>
-</div>
-
-<div align="center">
-  <img src="/images/x2.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Dark View</h3>
-</div>
+![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?logo=tailwind-css)
 
 ### Backend
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)
+![Azure Functions](https://img.shields.io/badge/Azure_Functions-4.0-0089D6)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi)
 
-    AZURE_CV_KEY=your_azure_cv_key
+### AI/ML
+![Azure Cognitive Services](https://img.shields.io/badge/Azure_AI-2023-0089D6)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.1-EE4C2C?logo=pytorch)
 
-    HEDERA_PRIVATE_KEY=your_hedera_key
+### Blockchain
+![Hedera Hashgraph](https://img.shields.io/badge/Hedera-2.6-000?logo=hedera)
 
-    COSMOS_DB_CONN_STR=your_cosmos_conn_str
+## 📦 Installation
 
-## 🖥️ Usage
+### Prerequisites
+- Node.js 20.x
+- Python 3.10+
+- Azure CLI 2.53+
+- Docker 24.0+
 
-### Start development servers
+git clone https://github.com/danielmuthama23/visionguard.git
+cd visionguard
 
-    cd frontend && npm run dev
+# Frontend setup
+cd frontend && npm install
 
-    cd backend && uvicorn main:app --reload
+# Backend setup
+cd ../backend && pip install -r requirements.txt
 
-### Run production build
-
-    docker-compose -f docker-compose.prod.yml up --build
-
-## 🌐 Access Interfaces
-
-- **Web Dashboard**: [http://localhost:5173](http://localhost:5173)
-- **API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
-- **Admin Portal**: [http://localhost:5173/admin](http://localhost:5173/admin)
-
-
-## 🤝 Contributing
-
-1. **Fork the project**  
-
-        Click the 'Fork' button at the top right of the repository page
-
-2. **Create your feature branch**  
-
-        git checkout -b feature/AmazingFeature
-
-**Commit your changes**
-
-    git commit -m 'Add some AmazingFeature'
-
-**Push to the branch**
-
-    git push origin feature/AmazingFeature
-
-**Open a Pull Request**
-
-Navigate to the original repository and click "New Pull Request"
 
 ## 📄 License
 
