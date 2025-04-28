@@ -120,7 +120,7 @@ VisionGuard transforms urban mobility through:
 
 <div align="center">
   <img src="/images/x3.png" alt="VisionGuard Dashboard Preview" width="800">
-  <h3>Frontend Light View</h3>
+  <h3>ADMIN Panel View</h3>
 </div>
 
 <div align="center">
